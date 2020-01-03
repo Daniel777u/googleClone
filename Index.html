@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="google-icon-png-17.png">
+    <script src="https://kit.fontawesome.com/bdbea80485.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: arial,sans-serif;
+            font-size: 13px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* Cabeza */
+
+
+        .menu1 {
+            margin: 0;
+            padding: 0;
+            padding-right: 20px;
+            height: 7.3vh;
+            justify-content: flex-end;
+        }
+        .menu1 li {
+            margin: 0 10px;
+            display: inline-block;
+            line-height: 24px;
+        }
+
+        .menu1 li:nth-child(4) {
+            width: 32px;
+            height: 32px;
+            background: rgb(12, 126, 8);
+            border-radius: 50%;
+        }
+
+        .menu1 li:nth-child(4) a {
+            color: white;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+        }
+
+
+        /* Seccion */
+
+
+        section.flex {
+            height: 60vh;
+            justify-content: center;
+        }
+        section>div {
+            width: 20vw;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        form.flex {
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+
+        form.flex input {
+            width: 34.4vw;
+            height: 5vh;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 50vh;
+            margin: 1.5vh 0;
+        }
+
+        form.flex button {
+            border: none;
+            border-radius: .5vh;
+            width: 9.6vw;
+            height: 4.3vh;
+            margin: 2vh .25vw;
+            color: rgba(0,0,0,0.75);
+        }
+
+        form img {
+            position: absolute;
+            top: 2.84vh;
+            right: 18px;
+        }
+        form i {
+            position:absolute;
+            top: 3.48vh;
+            left: 18px;
+            color: rgba(0,0,0,0.4);
+        }
+
+        /* Pie de pagina */
+
+
+        footer {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.06)
+        }
+
+        footer>div {
+            height: 4.7vh;
+        }
+
+        footer>div:nth-child(1) {
+            border: 1px solid rgba(0,0,0,.05);
+            color: rgba(0,0,0,.54);
+            font-size: 15px;
+            padding-left: 1.7vw;
+        }
+        
+        footer>div:nth-child(2) {
+            padding: 0 1.7vw;
+            justify-content: space-between;
+        }
+        footer>div:nth-child(2)>div:nth-child(1) {
+            width: 25.8vw;
+            justify-content: space-between;
+            
+        }
+
+        footer>div:nth-child(2)>div:nth-child(2) {
+            width: 15.2vw;
+            justify-content: space-between;
+        
+        }
+
+        footer a {
+            color: rgba(0,0,0,.64)
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu1 flex">
+                <li>
+                    <a href="">Gmail</a>
+                </li>
+                <li>
+                    <a href="">Imagenes</a>
+                </li>
+                <!-- Menu -->
+                <li>
+                    <a class="flex" href="" >
+                        <i style="color: rgba(0, 0, 0, 0.87);" class="fas fa-th fa-lg"></i>
+                    </a>
+                </li>
+                <!-- Icono de la cuenta -->
+                <li>
+                    <a class="flex" href="">
+                        D
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="flex">
+        <div class="flex">
+            <figure>
+                <a href="">
+                    <img height="92" src="googlelogo.png" alt="">
+                </a>
+            </figure>
+            <form class="buscador flex" action="">
+                <input type="text">
+                <div>
+                    <button>
+                        Buscar con Google
+                    </button>
+                    <button>
+                        Me siento con suerte
+                    </button>
+                </div>
+                <img height="24" src="googlemic.png" alt="">
+                <i class="fas fa-search"></i>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="flex">Ecuador</div>
+        <div class="flex">    
+            <div class="flex">
+                <a href="">Publicidad</a>
+                <a href="">Negocios</a>
+                <a href="">Sobre Google</a>
+                <a href="">Como funciona la Busqueda</a>
+            </div>
+            <div class="flex">
+                <a href="">Privacidad</a>
+                <a href="">Condiciones</a>
+                <a href="">Preferencias</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
